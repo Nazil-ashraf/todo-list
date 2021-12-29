@@ -1,0 +1,36 @@
+.todo--wrap--content--detials{
+    height: 5rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.todo--wrap--content--detials--checkbox{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid dimgrey;
+    appearance: none;
+
+
+}
+.todo--wrap--content--detials--checkbox:checked{
+    background-color: #3197B9 ;
+}
+input[type=checkbox]:checked + input.todo--wrap--content--details--input{
+    text-decoration: line-through;
+
+}
+.todo--wrap--content--details--input{
+    font-size: 20px;
+    height: 2.2rem;
+    /*text-decoration: line-through;*/
+
+}
+.todo--wrap--content--details--delete{
+    transform: scale(1.5);
+    color: dimgrey;
+}
